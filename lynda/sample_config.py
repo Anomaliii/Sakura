@@ -10,7 +10,7 @@ def get_user_list(config, key):
 
 # Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 class Config(object):
-    LOGGER = True
+    LOGGER = False
 
     # REQUIRED
     TOKEN = "" # Bot Token
@@ -57,8 +57,8 @@ class Config(object):
 
 
 class Production(Config):
-    LOGGER = True
+    LOGGER = False
 
 
 class Development(Config):
-    LOGGER = True
+    LOGGER = False
